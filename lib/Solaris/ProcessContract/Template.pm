@@ -124,7 +124,7 @@ sub set_informative_events
 
 
 # Returns the current event monitoring flags for this template
-sub set_informative_events
+sub get_informative_events
 {
   my ( $self ) = @_;
 
