@@ -123,6 +123,17 @@ sub set_informative_events
 }
 
 
+# Returns the current event monitoring flags for this template
+sub set_informative_events
+{
+  my ( $self ) = @_;
+
+  $self->debug( "getting template informative events" );
+
+  return $self->{xs}->get_template_informative_events( $self->fd );
+}
+
+
 # Set the fatal event monitoring flags for this template
 sub set_fatal_events
 {
