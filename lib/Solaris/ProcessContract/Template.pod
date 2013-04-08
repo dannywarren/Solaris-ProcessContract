@@ -104,6 +104,9 @@ created.
 See L<Solaris::ProcessContract/"Param Flags"> for a list of available
 parameter flags and what they do.
 
+None of the parameter flags are set by default, so you only need to set this
+if you wish to change the template behavior.
+
 =head2 get_parameters
 
 Arguments: C<none>
@@ -133,6 +136,10 @@ Set the informative events C<$flags> on this template.
 
 This allows you to control which events will be reported for this contract
 group.
+
+If you do not set this value yourself, L<"CT_PR_EV_CORE"|Solaris::ProcessContract/"CT_PR_EV_CORE">
+and L<"CT_PR_EV_SIGNAL"|Solaris::ProcessContract/"CT_PR_EV_SIGNAL"> will be used as the default
+informative events.
 
 See L<Solaris::ProcessContract/"Event Flags"> for a list of available
 event flags.
@@ -170,6 +177,10 @@ to be automatically killed.
 See L<Solaris::ProcessContract/"Event Flags"> for a list of available
 event flags.
 
+If you do not set this value yourself, L<"CT_PR_EV_EMPTY"|Solaris::ProcessContract/"CT_PR_EV_EMPTY">
+and L<"CT_PR_EV_HWERR"|Solaris::ProcessContract/"CT_PR_EV_HWERR"> will be used as the default
+informative events.
+
 =head2 get_fatal_events
 
 Arguments: C<none>
@@ -197,11 +208,14 @@ Set the critical events C<$flags> on this template.
   # Unset all flags
   $template->set_fatal_events( 0 );
 
-This allows you to control which events will cause both this contract and the
-ones above it in the hierarchy to be marked as critical.
+This allows you to control which events will cause both this contract and any
+ones related to it to be destroyed.
 
 See L<Solaris::ProcessContract/"Event Flags"> for a list of available
 event flags.
+
+If you do not set this value yourself L<"CT_PR_EV_HWERR"|Solaris::ProcessContract/"CT_PR_EV_HWERR">
+will be used as the default informative event.
 
 =head2 get_critical_events
 
