@@ -150,6 +150,17 @@ sub set_fatal_events
 }
 
 
+# Returns the current fatal event flags for this template
+sub get_fatal_events
+{
+  my ( $self ) = @_;
+
+  $self->debug( "getting template fatal events" );
+
+  return $self->{xs}->get_template_fatal_events( $self->fd );
+}
+
+
 # Set the fatal event monitoring flags for this template
 sub set_critical_events
 {
@@ -163,6 +174,17 @@ sub set_critical_events
   $self->{xs}->set_template_critical_events( $self->fd, $flags );
 
   return;
+}
+
+
+# Returns the current critical event flags for this template
+sub get_critical_events
+{
+  my ( $self ) = @_;
+
+  $self->debug( "getting template critical events" );
+
+  return $self->{xs}->get_template_critical_events( $self->fd );
 }
 
 
