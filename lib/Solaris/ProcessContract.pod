@@ -298,7 +298,7 @@ Otherwise, all processes in the contract are killed when a fatal event happens.
 
 If set, allow this contract to inherit other contracts.
 
-Otherwise, any contracts we attempt to inherit will stay abandonded.
+Otherwise, any contracts we attempt to inherit will stay abandoned.
 
 =head3 CT_PR_ALLPARAM
 

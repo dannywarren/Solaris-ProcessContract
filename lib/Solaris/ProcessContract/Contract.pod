@@ -62,10 +62,6 @@ this contract.
 This allows you to use the libcontract control functions to make changes to this
 contract.
 
-=head1 EXCEPTIONS
-
-Exception handling is provided by the L<Solaris::ProcessContract::Exceptions> class.
-
 =head1 SEE ALSO
 
 =over

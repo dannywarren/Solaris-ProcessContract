@@ -234,16 +234,12 @@ Arguments: C<none>
 Returns C<undef>
 
 If you wish to start over with a fresh template, but don't want to destroy the
-one you have and create a new instace, use L<"/reset"> to start this template
+one you have and create a new instance, use L<"/reset"> to start this template
 over.
 
 Alternately, you could just set your template instance to C<undef> and then run
 L<Solaris::ProcessContract/"template"> in L<Solaris::ProcessContract> to get a
 new one.
-
-=head1 EXCEPTIONS
-
-Exception handling is provided by the L<Solaris::ProcessContract::Exceptions> class.
 
 =head1 SEE ALSO
 

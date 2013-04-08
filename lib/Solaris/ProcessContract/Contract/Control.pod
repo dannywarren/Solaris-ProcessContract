@@ -46,7 +46,7 @@ Even when creating new contracts for child processes, those contracts are still
 underneath the parent's contract in the contract hierarchy.
 
 By abandoning the contract, you will be placing it at the top of it's own 
-heirarchy, and any monitoring, event triggers or resource limitations from
+hierarchy, and any monitoring, event triggers or resource limitations from
 processes in the contract will no longer affect your own.
 
 =head2 adopt
@@ -59,7 +59,7 @@ Adopt the contract so that it is returned to your contract group.
 
   $contract->control->adopt();
 
-This is the opposite of L</"abandon">, in that it will bring an abandonded
+This is the opposite of L</"abandon">, in that it will bring an abandoned
 contract back in to your contract hierarchy.
 
 =head2 reset
@@ -73,10 +73,6 @@ close and then open back up the file descriptor for the contract control
 instance.
 
   $contract->control->reset()
-
-=head1 EXCEPTIONS
-
-Exception handling is provided by the L<Solaris::ProcessContract::Exceptions> class.
 
 =head1 SEE ALSO
 
