@@ -4,7 +4,7 @@ Solaris::ProcessContract - Manage Solaris process contracts via libcontract
 
 =head1 VERSION
 
-1.00
+1.01
 
 =head1 SYNOPSIS
 
