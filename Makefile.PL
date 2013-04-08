@@ -27,8 +27,8 @@ WriteMakefile
   {
     'resources' => 
     {
-      'homepage'    => "https://github.com/dannywarren/Solaris-ProcessContract",
-      'respository' => 
+      'homepage'   => "https://github.com/dannywarren/Solaris-ProcessContract",
+      'repository' => "https://github.com/dannywarren/Solaris-ProcessContract",
       {
         'url'  => "git@github.com:dannywarren/Solaris-ProcessContract.git",
         'web'  => "https://github.com/dannywarren/Solaris-ProcessContract",
