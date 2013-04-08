@@ -18,7 +18,7 @@ ok( ( my $fatal_events_default       = $template->get_fatal_events       ) > -1,
 ok( ( my $critical_events_default    = $template->get_critical_events    ) > -1,  'get_critical_events default' );
 
 is( $template->set_parameters( CT_PR_PGRPONLY ), undef, 'set_parameters' );
-is( $template->get_parameters, sCT_PR_PGRPONLY,          'get_parameters' );
+is( $template->get_parameters, CT_PR_PGRPONLY,          'get_parameters' );
 
 is( $template->set_informative_events( CT_PR_EV_FORK ), undef, 'set_informative_events' );
 is( $template->get_informative_events, CT_PR_EV_FORK,          'get_informative_events' );
