@@ -352,6 +352,16 @@ This module exports nothing by default.
 
 See L</"FLAGS"> for a list of available exports.
 
+=head1 INSTALLATION
+
+The L<libcontract(3)|http://docs.oracle.com/cd/E26505_01/html/816-5173/libcontract-3lib.html> 
+facility was first made available on Solaris 10, so you need to be running at
+least that to install this module.
+
+This module will fail to install if it cannot find C<libcontract> while running
+C<Makefile.PL>, but does no other checks to forcefully validate your operating
+system and version.
+
 =head1 TODO
 
 Right now, this module gives you what you need to control the contract system
