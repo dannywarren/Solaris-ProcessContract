@@ -101,7 +101,7 @@ Set the behavior parameter C<$flags> on this template.
 This allows you to control the behavior of the next contract that will be
 created.  
 
-See L<Solaris::ProcessContract::Flags/"Param Flags"> for a list of available
+See L<Solaris::ProcessContract/"Param Flags"> for a list of available
 parameter flags and what they do.
 
 =head2 get_parameters
@@ -134,7 +134,7 @@ Set the informative events C<$flags> on this template.
 This allows you to control which events will be reported for this contract
 group.
 
-See L<Solaris::ProcessContract::Flags/"Event Flags"> for a list of available
+See L<Solaris::ProcessContract/"Event Flags"> for a list of available
 event flags.
 
 =head2 get_informative_events
@@ -167,7 +167,7 @@ Set the fatal events C<$flags> on this template.
 This allows you to control which events will cause all processes in the contract
 to be automatically killed.
 
-See L<Solaris::ProcessContract::Flags/"Event Flags"> for a list of available
+See L<Solaris::ProcessContract/"Event Flags"> for a list of available
 event flags.
 
 =head2 get_fatal_events
@@ -200,7 +200,7 @@ Set the critical events C<$flags> on this template.
 This allows you to control which events will cause both this contract and the
 ones above it in the hierarchy to be marked as critical.
 
-See L<Solaris::ProcessContract::Flags/"Event Flags"> for a list of available
+See L<Solaris::ProcessContract/"Event Flags"> for a list of available
 event flags.
 
 =head2 get_critical_events
