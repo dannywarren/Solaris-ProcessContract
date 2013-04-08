@@ -354,9 +354,15 @@ See L</"FLAGS"> for a list of available exports.
 =head1 TODO
 
 Right now, this module gives you what you need to control the contract system
-when forking processes.
+when forking processes.  That is going to be the most important need for most
+people writing daemon software in perl for solaris.
 
-Ideally, it could be expanded to use 
+Ideally, it could be expanded to be able to fully monitor and acknowledge
+contract system events.
+
+It also would be nice to have access to some of the deeper info when querying
+contracts, or maybe have a way to tie the proc filesystem in to the contract
+filesystem so that you could query both. 
 
 =head1 SEE ALSO
 
