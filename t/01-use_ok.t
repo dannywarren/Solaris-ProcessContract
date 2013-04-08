@@ -3,4 +3,7 @@ use warnings;
 
 use Test::More 'tests' => 1;
 
-use_ok('Solaris::ProcessContract');
+
+BEGIN { use_ok( 'Solaris::ProcessContract' ); }
+
+
