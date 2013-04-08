@@ -4,7 +4,7 @@ WriteMakefile
 (
 
   'NAME'          => "Solaris::ProcessContract",
-  'AUTHOR'        => "Danny Warren <perl@dannywarren.com>",
+  'AUTHOR'        => "Danny Warren <perl\@dannywarren.com>",
   'LICENSE'       => "perl",
   'VERSION_FROM'  => "lib/Solaris/ProcessContract.pm",
   'ABSTRACT_FROM' => "lib/Solaris/ProcessContract.pod",
@@ -29,11 +29,6 @@ WriteMakefile
     {
       'homepage'   => "https://github.com/dannywarren/Solaris-ProcessContract",
       'repository' => "https://github.com/dannywarren/Solaris-ProcessContract",
-      {
-        'url'  => "git@github.com:dannywarren/Solaris-ProcessContract.git",
-        'web'  => "https://github.com/dannywarren/Solaris-ProcessContract",
-        'type' => "git", 
-      },
     },
   },
 
